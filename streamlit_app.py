@@ -388,7 +388,7 @@ try:
                 # Show detailed statistics
                 st.subheader("📊 Detailed Statistics")
                 
-                for col_name, col_data in analysis.items():
+                for col_name, col_data in analysis_results.items():
                     with st.expander(f"**{col_name}**"):
                         if 'basic_statistics' in col_data:
                             # Numerical column - show ALL stats from main.py
@@ -504,3 +504,4 @@ except Exception as e:
         st.write("Could not load package list")
     
     st.stop()
+
